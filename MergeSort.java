@@ -1,6 +1,7 @@
 import java.util.Scanner;
-import static java.lang.System.out;
+
 import static java.lang.System.in;
+import static java.lang.System.out;
 
 public class MergeSort {
 
@@ -54,20 +55,20 @@ public class MergeSort {
             }
         }
     }
-    
-    public static void printArray(Comparable[] array){
+
+    public static void printArray(Comparable[] array) {
         out.print("{ ");
         for (int i = 0; i < array.length; i++) {
             out.print(array[i] + " ");
         }
         out.print("}");
     }
-    
+
     public static void main(String[] args) {
         Scanner scan = new Scanner(in);
         int size = scan.nextInt();
         Integer[] array = new Integer[size];
-        for (int i = 0; i <array.length ; i++) {
+        for (int i = 0; i < array.length; i++) {
             array[i] = scan.nextInt();
         }
         mergeSort(array);
